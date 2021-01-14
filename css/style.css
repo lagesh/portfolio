@@ -6,7 +6,7 @@
 }
 /*---the nav---*/
 nav {
-  min-height: 7vh;
+  min-height: 6vh;
   background-image: linear-gradient(
     to right,
     rgb(153, 221, 155),
@@ -15,6 +15,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+h1 {
+  /* font-family: 'Raleway', sans-serif; */
+  margin-left: 10%;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 4px;
+  font-weight: 500;
 }
 
 .nav-link {
@@ -50,6 +59,8 @@ a:hover {
   margin: 5px 20px;
   transition: all 0.3s ease;
 }
+
+/* Media */
 
 @media only screen and (max-width: 1024px) {
   .nav-link {
