@@ -2,27 +2,34 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/emma-smith-15v_PnfwHs4-unsplash.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center top;
+  overflow: hidden;
+}
+
 /*---the nav---*/
 nav {
-  min-height: 6vh;
-  background-image: linear-gradient(
-    to right,
-    rgb(153, 221, 155),
-    rgb(46, 150, 144)
-  );
+  padding-top: 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-transform: uppercase;
+  margin: 0 -4%;
 }
 
 h1 {
-  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Raleway', sans-serif;
   margin-left: 10%;
   color: #fff;
-  font-size: 1.5rem;
-  line-height: 4px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
   font-weight: 500;
 }
 
@@ -33,19 +40,21 @@ h1 {
   word-spacing: 3px;
   justify-content: space-around;
   position: absolute;
-  right: 10%;
+  right: 5%;
 }
 .nav-link li {
   list-style: none;
 }
 
 a {
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  color: rgb(224, 233, 220);
-  font-size: 1rem;
-  font-weight: 500;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
-a:hover {
+nav h1:hover,
+nav a:hover {
   color: rgb(170, 235, 191);
 }
 .burger {
@@ -60,16 +69,38 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-/* Media */
+.welcome-msg {
+  color: #fff;
+  /* width: 80%; */
+  position: relative;
+  top: 45%;
+  text-align: center;
+}
+
+.welcome-msg h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  margin: 0;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.welcome-msg h3 {
+  font-family: 'Slabo 27px', serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+/* Media queries*/
 
 @media only screen and (max-width: 1024px) {
   .nav-link {
-    width: 40%;
+    width: 45%;
   }
 }
 @media only screen and (max-width: 768px) {
   .nav-link {
-    width: 45%;
+    width: 50%;
   }
 }
 @media only screen and (max-width: 660px) {
