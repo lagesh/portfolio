@@ -5,6 +5,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../images/emma-smith-15v_PnfwHs4-unsplash.jpg);
@@ -91,6 +95,45 @@ nav a:hover {
   font-weight: 300;
   letter-spacing: 2px;
 }
+.welcome-msg p {
+  color: #fff;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+/* ----------ABOUT ME --------*/
+.about-me {
+  width: 55%;
+  margin: auto;
+  text-align: center;
+  padding: 4rem;
+  color: rgb(2, 5, 29);
+}
+
+.about-me h2 {
+  margin-bottom: 1.75rem;
+}
+.about-me p {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  line-height: 140%;
+}
+/* ---------FOOTER ------------ */
+footer p {
+  color: #000;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
 /* Media queries*/
 
 @media only screen and (max-width: 1024px) {
@@ -136,25 +179,4 @@ nav a:hover {
     opacity: 1;
     transform: translateX(0px);
   }
-}
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-p {
-  color: #fff;
-  text-align: center;
-  margin-top: 5rem;
-}
-
-/* ---------FOOTER ------------ */
-footer p {
-  color: #000;
-  text-align: center;
-  font-size: 0.75rem;
 }
