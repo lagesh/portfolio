@@ -9,6 +9,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center;
+  margin-bottom: 1.75rem;
 }
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -127,6 +128,74 @@ nav a:hover {
   font-size: 1rem;
   letter-spacing: 1.5px;
   line-height: 140%;
+}
+
+/* -----------SKILLS----------*/
+#skills {
+  padding: 2rem;
+  background-color: rgb(243, 237, 237);
+}
+#skills h3 {
+  text-align: center;
+  margin: 1.5rem;
+}
+.all-skills {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+.technical-skills {
+  width: 60%;
+}
+.non-technical-skiils {
+  width: 40%;
+  padding: 3rem;
+}
+
+.non-technical-skills li {
+  list-style-type: circle;
+}
+.skill-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skill-image {
+  width: 6rem;
+  height: 6rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.image1 {
+  background-image: url(../images/skills/logo-html-5.png);
+}
+.image2 {
+  background-image: url(../images/skills/css3.jpg);
+}
+.image3 {
+  background-image: url(../images/skills/javascript-logo.png);
+}
+.image4 {
+  background-image: url(../images/skills/bootstrap.png);
+}
+.image5 {
+  background-image: url(../images/skills/jquery.png);
+}
+.image6 {
+  background-image: url(../images/skills/cli-icon.png);
+}
+.image7 {
+  background-image: url(../images/skills/git.png);
+}
+.image8 {
+  background-image: url(../images/skills/github.png);
 }
 /* ---------FOOTER ------------ */
 footer p {
