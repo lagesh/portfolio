@@ -90,12 +90,15 @@ nav a:hover {
   margin: 0;
   font-weight: normal;
   margin-bottom: 10px;
+  animation-delay: 0.4s;
 }
 
 .welcome-msg h3 {
   font-family: 'Slabo 27px', serif;
   font-weight: 300;
   letter-spacing: 2px;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
 }
 .welcome-msg p {
   color: #fff;
