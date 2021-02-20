@@ -161,7 +161,7 @@ nav a:hover {
 
 .non-technical-skills li {
   list-style-type: circle;
-  margin: 0.7rem;
+  margin: 0.3rem;
 }
 .skill-images {
   display: flex;
