@@ -132,12 +132,14 @@ nav a:hover {
 
 /* -----------SKILLS----------*/
 #skills {
-  padding: 2rem;
+  padding: 3rem;
+  color: rgb(2, 5, 29);
   background-color: rgb(243, 237, 237);
 }
 #skills h3 {
   text-align: center;
   margin: 1.5rem;
+  text-decoration: underline;
 }
 .all-skills {
   width: 80%;
@@ -149,11 +151,12 @@ nav a:hover {
 }
 .non-technical-skiils {
   width: 40%;
-  padding: 3rem;
+  /* padding: 2rem; */
 }
 
 .non-technical-skills li {
   list-style-type: circle;
+  margin: 0.7rem;
 }
 .skill-images {
   display: flex;
