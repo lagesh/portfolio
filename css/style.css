@@ -148,10 +148,12 @@ nav a:hover {
 }
 .technical-skills {
   width: 60%;
+  flex-shrink: 1;
+  margin-right: 2rem;
 }
 .non-technical-skiils {
   width: 40%;
-  /* padding: 2rem; */
+  flex-shrink: 2;
 }
 
 .non-technical-skills li {
@@ -164,8 +166,8 @@ nav a:hover {
   flex-wrap: wrap;
 }
 .skill-image {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   margin: 1rem;
   padding: 0.5rem;
   background-size: cover;
@@ -227,7 +229,17 @@ footer span {
     width: 80%;
   }
 }
-
+@media only screen and (max-width: 857px) {
+  .all-skills {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .technical-skills,
+  .non-technical-skiils {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 @media only screen and (max-width: 806px) {
   .nav-link {
     right: 0px;
