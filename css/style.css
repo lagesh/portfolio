@@ -246,6 +246,11 @@ nav a:hover {
   background-image: url(../images/skills/github.png);
 }
 
+/*------------PROJECTS SECTION -------- */
+#projects {
+  padding: 3rem;
+}
+
 /* ---------FOOTER ------------ */
 footer p {
   padding: 2rem;
