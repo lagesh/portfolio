@@ -197,6 +197,7 @@ nav a:hover {
   height: 5rem;
   margin: 1rem;
   padding: 0.5rem;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -210,6 +211,7 @@ nav a:hover {
   -ms-transition: transform 0.6s linear 0.1s;
   -o-transition: transform 0.6s linear 0.1s;
 }
+
 .skill-image:hover {
   transform: translateY(-20px);
   -webkit-transform: translateY(-20px);
@@ -217,9 +219,11 @@ nav a:hover {
   -ms-transform: translateY(-20px);
   -o-transform: translateY(-20px);
 }
+
 .image1 {
   background-image: url(../images/skills/logo-html-5.png);
 }
+
 .image2 {
   background-image: url(../images/skills/css3.jpg);
 }
@@ -241,6 +245,7 @@ nav a:hover {
 .image8 {
   background-image: url(../images/skills/github.png);
 }
+
 /* ---------FOOTER ------------ */
 footer p {
   padding: 2rem;
@@ -267,16 +272,27 @@ footer span {
   .about-me {
     width: 80%;
   }
+  .technical-skills {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .non-technical-skills {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .non-technical-skills li {
+    text-align: center;
+    list-style-position: inside;
+  }
+  .skill-image {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 @media only screen and (max-width: 857px) {
   .all-skills {
     width: 90%;
     flex-wrap: wrap;
-  }
-  .technical-skills,
-  .non-technical-skiils {
-    width: 100%;
-    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 806px) {
@@ -303,6 +319,18 @@ footer span {
   }
 }
 
+@media only screen and (max-width: 541px) {
+  #skills {
+    padding: 1.5rem;
+  }
+  .skill-image {
+    height: 3rem;
+    width: 3rem;
+  }
+  .non-technical-skills li {
+    text-align: left;
+  }
+}
 .nav-active {
   transform: translateX(0%);
 }
