@@ -61,11 +61,11 @@ a {
 }
 
 .nav-link li {
-  transition: transform 0.6s ease-in 0.1s;
-  -ms-transition: transform 0.6s ease-in 0.1s;
-  -o-transition: transform 0.6s ease-in 0.1s;
-  -webkit-transition: transform 0.6s ease-in 0.1s;
-  -moz-transition: transform 0.6s ease-in 0.1s;
+  transition: transform 0.6s ease-in;
+  -ms-transition: transform 0.6s ease-in;
+  -o-transition: transform 0.6s ease-in;
+  -webkit-transition: transform 0.6s ease-in;
+  -moz-transition: transform 0.6s ease-in;
 }
 
 .nav-link li:hover,
@@ -251,6 +251,25 @@ nav a:hover {
   padding: 3rem;
 }
 
+.projects-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  min-width: 28%;
+  height: 300px;
+  background-color: rgb(197, 187, 187);
+  border: 1px solid #000;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  margin: 1rem;
+}
+
 /* ---------FOOTER ------------ */
 footer p {
   padding: 2rem;
@@ -267,6 +286,9 @@ footer span {
 @media only screen and (max-width: 1100px) {
   .about-me {
     width: 70%;
+  }
+  .project-item {
+    min-width: 40%;
   }
 }
 
@@ -322,6 +344,9 @@ footer span {
   .about-me {
     width: 95%;
   }
+  .project-item {
+    height: 250px;
+  }
 }
 
 @media only screen and (max-width: 541px) {
@@ -334,6 +359,10 @@ footer span {
   }
   .non-technical-skills li {
     text-align: left;
+  }
+
+  .project-item {
+    width: 100%;
   }
 }
 .nav-active {
