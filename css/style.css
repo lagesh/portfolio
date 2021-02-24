@@ -59,29 +59,30 @@ a {
   font-size: 0.8rem;
   font-weight: 400;
 }
-nav h1,
-.nav-link li,
-nav a {
-  transition: all 0.75s ease-in 0.2s;
-  -webkit-transition: all 0.75s ease-in 0.2s;
-  -moz-transition: all 0.75s ease-in 0.2s;
-  -ms-transition: all 0.75s ease-in 0.2s;
-  -o-transition: all 0.75s ease-in 0.2s;
+
+.nav-link li {
+  transition: transform 0.6s ease-in 0.1s;
+  -ms-transition: transform 0.6s ease-in 0.1s;
+  -o-transition: transform 0.6s ease-in 0.1s;
+  -webkit-transition: transform 0.6s ease-in 0.1s;
+  -moz-transition: transform 0.6s ease-in 0.1s;
 }
+
 .nav-link li:hover,
-nav h1:hover,
 nav a:hover {
   color: rgb(170, 235, 191);
-  transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
+
 .burger {
   display: none;
   cursor: pointer;
 }
+
 .burger div {
   width: 20px;
   height: 3px;
@@ -160,28 +161,36 @@ nav a:hover {
   text-decoration: underline;
 }
 .all-skills {
-  width: 80%;
-  display: flex;
+  width: 90%;
+  display: block;
   margin: 0 auto;
 }
 .technical-skills {
   width: 60%;
-  flex-shrink: 1;
-  margin-right: 2rem;
+  float: left;
 }
-.non-technical-skiils {
+.non-technical-skills {
+  float: right;
   width: 40%;
-  flex-shrink: 2;
 }
 
 .non-technical-skills li {
+  line-height: 1.5;
   list-style-type: circle;
-  margin: 0.3rem;
 }
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .skill-images {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 549px;
+  margin: auto;
 }
 .skill-image {
   width: 5rem;
@@ -195,11 +204,11 @@ nav a:hover {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transition: transform 0.75s linear 0.1s;
-  -webkit-transition: transform 0.75s linear 0.1s;
-  -moz-transition: transform 0.75s linear 0.1s;
-  -ms-transition: transform 0.75s linear 0.1s;
-  -o-transition: transform 0.75s linear 0.1s;
+  transition: transform 0.6s linear 0.1s;
+  -webkit-transition: transform 0.6s linear 0.1s;
+  -moz-transition: transform 0.6s linear 0.1s;
+  -ms-transition: transform 0.6s linear 0.1s;
+  -o-transition: transform 0.6s linear 0.1s;
 }
 .skill-image:hover {
   transform: translateY(-20px);
