@@ -11,6 +11,7 @@ h2 {
   text-align: center;
   margin-bottom: 1.75rem;
 }
+
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../images/emma-smith-15v_PnfwHs4-unsplash.jpg);
@@ -48,6 +49,7 @@ h1 {
   position: absolute;
   right: 4%;
 }
+
 .nav-link li {
   list-style: none;
 }
@@ -116,6 +118,7 @@ nav a:hover {
   animation-delay: 1s;
   animation-timing-function: ease-in;
 }
+
 .welcome-msg p {
   color: #fff;
   text-align: center;
@@ -125,12 +128,15 @@ nav a:hover {
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
+
 .toggle .line2 {
   opacity: 0;
 }
+
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
 /* ----------ABOUT ME --------*/
 .about-me {
   width: 60%;
@@ -143,6 +149,7 @@ nav a:hover {
 .about-me h2 {
   margin-bottom: 1.75rem;
 }
+
 .about-me p {
   font-size: 1rem;
   letter-spacing: 1.5px;
@@ -155,20 +162,24 @@ nav a:hover {
   color: rgb(2, 5, 29);
   background-color: rgb(243, 237, 237);
 }
+
 #skills h3 {
   text-align: center;
   margin: 1.5rem;
   text-decoration: underline;
 }
+
 .all-skills {
   width: 90%;
   display: block;
   margin: 0 auto;
 }
+
 .technical-skills {
   width: 60%;
   float: left;
 }
+
 .non-technical-skills {
   float: right;
   width: 40%;
@@ -192,6 +203,7 @@ nav a:hover {
   max-width: 549px;
   margin: auto;
 }
+
 .skill-image {
   width: 5rem;
   height: 5rem;
@@ -227,21 +239,27 @@ nav a:hover {
 .image2 {
   background-image: url(../images/skills/css3.jpg);
 }
+
 .image3 {
   background-image: url(../images/skills/javascript-logo.png);
 }
+
 .image4 {
   background-image: url(../images/skills/bootstrap.png);
 }
+
 .image5 {
   background-image: url(../images/skills/jquery.png);
 }
+
 .image6 {
   background-image: url(../images/skills/cli-icon.png);
 }
+
 .image7 {
   background-image: url(../images/skills/git.png);
 }
+
 .image8 {
   background-image: url(../images/skills/github.png);
 }
@@ -278,6 +296,7 @@ footer p {
   font-size: 0.75rem;
   background: rgb(30, 35, 46);
 }
+
 footer span {
   color: rgb(247, 0, 0);
 }
@@ -287,6 +306,7 @@ footer span {
   .about-me {
     width: 70%;
   }
+
   .project-item {
     min-width: 40%;
   }
@@ -296,32 +316,39 @@ footer span {
   .nav-link {
     width: 45%;
   }
+
   .about-me {
     width: 80%;
   }
+
   .technical-skills {
     width: 100%;
     margin: 0 auto;
   }
+
   .non-technical-skills {
     width: 100%;
     margin: 0 auto;
   }
+  
   .non-technical-skills li {
     text-align: center;
     list-style-position: inside;
   }
+
   .skill-image {
     height: 4rem;
     width: 4rem;
   }
 }
+
 @media only screen and (max-width: 857px) {
   .all-skills {
     width: 90%;
     flex-wrap: wrap;
   }
 }
+
 @media only screen and (max-width: 806px) {
   .nav-link {
     right: 0px;
@@ -335,15 +362,19 @@ footer span {
     transform: translateX(100%);
     transition: transform 0.6s ease-in;
   }
+
   .nav-link li {
     opacity: 0;
   }
+
   .burger {
     display: block;
   }
+
   .about-me {
     width: 95%;
   }
+
   .project-item {
     height: 250px;
   }
@@ -353,10 +384,12 @@ footer span {
   #skills {
     padding: 1.5rem;
   }
+
   .skill-image {
     height: 3rem;
     width: 3rem;
   }
+
   .non-technical-skills li {
     text-align: left;
   }
@@ -365,6 +398,7 @@ footer span {
     width: 100%;
   }
 }
+
 .nav-active {
   transform: translateX(0%);
 }
