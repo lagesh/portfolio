@@ -330,7 +330,7 @@ footer span {
     width: 100%;
     margin: 0 auto;
   }
-  
+
   .non-technical-skills li {
     text-align: center;
     list-style-position: inside;
@@ -350,7 +350,7 @@ footer span {
 }
 
 @media only screen and (max-width: 806px) {
-  .nav-link {
+  /* .nav-link {
     right: 0px;
     height: 93vh;
     top: 7vh;
@@ -358,10 +358,15 @@ footer span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: 30%;
     transform: translateX(100%);
     transition: transform 0.6s ease-in;
-  }
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  } 
+  */
 
   .nav-link li {
     opacity: 0;
@@ -369,6 +374,7 @@ footer span {
 
   .burger {
     display: block;
+    padding: 2rem;
   }
 
   .about-me {
