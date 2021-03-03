@@ -269,6 +269,32 @@ nav a:hover {
 .project-item {
   width: 43%;
   margin: 20px;
+  box-shadow: 3px 3px 5px rgb(119, 109, 109);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))
+}
+
+.project-card-bottom {
+  background-color: rgb(2, 116, 116);
+  color: #fff;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.project-card-bottom h3 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.project-card-bottom p {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
 }
 
 .project-image {
@@ -364,7 +390,6 @@ footer span {
   .about-me {
     width: 95%;
   }
-
 }
 
 @media only screen and (max-width: 780px) {
