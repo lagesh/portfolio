@@ -42,7 +42,7 @@ h1 {
 
 .nav-link {
   display: flex;
-  width: 40%;
+  width: 45%;
   letter-spacing: 2px;
   word-spacing: 3px;
   justify-content: space-around;
@@ -54,7 +54,7 @@ h1 {
   list-style: none;
 }
 
-a {
+.nav-link a {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: #fff;
@@ -95,7 +95,6 @@ nav a:hover {
 
 .welcome-msg {
   color: #fff;
-  /* width: 80%; */
   position: relative;
   top: 45%;
   text-align: center;
@@ -123,18 +122,6 @@ nav a:hover {
   color: #fff;
   text-align: center;
   margin-top: 5rem;
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* ----------ABOUT ME --------*/
@@ -267,25 +254,26 @@ nav a:hover {
 /*------------PROJECTS SECTION -------- */
 #projects {
   padding: 3rem;
+  height: auto;
 }
 
 .projects-container {
-  width: 90%;
+  max-width: 840px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .project-item {
-  min-width: 28%;
-  height: 300px;
-  background-color: rgb(197, 187, 187);
-  border: 1px solid #000;
-  color: rgba(0, 0, 0, 0.6);
-  padding: 1rem;
-  margin: 1rem;
+  width: 43%;
+  margin: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
 }
 
 /* ---------FOOTER ------------ */
@@ -305,10 +293,6 @@ footer span {
 @media only screen and (max-width: 1100px) {
   .about-me {
     width: 70%;
-  }
-
-  .project-item {
-    min-width: 40%;
   }
 }
 
@@ -381,8 +365,27 @@ footer span {
     width: 95%;
   }
 
+}
+
+@media only screen and (max-width: 780px) {
+  .projects-container {
+    max-width: 600px;
+    justify-content: center;
+  }
+
   .project-item {
-    height: 250px;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projects-container {
+    max-width: 550px;
+    justify-content: center;
+  }
+
+  .project-item {
+    width: 70%;
   }
 }
 
@@ -400,22 +403,16 @@ footer span {
     text-align: left;
   }
 
+  .projects-container {
+    min-width: 90%;
+    justify-content: center;
+  }
+
   .project-item {
-    width: 100%;
+    min-width: 100%;
   }
 }
 
-.nav-active {
+/* .nav-active {
   transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
+} */
