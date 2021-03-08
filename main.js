@@ -25,3 +25,15 @@ const navSlide = () => {
 
 navSlide();
 */
+let topnav = document.getElementById('topnav');
+let sticky = topnav.offsetTop;
+
+const stickyTopnav = () => {
+  if (window.pageYOffset > sticky) {
+    topnav.classList.add('sticky');
+  } else {
+    topnav.classList.remove('sticky');
+  }
+}
+
+window.onscroll = stickyTopnav;
