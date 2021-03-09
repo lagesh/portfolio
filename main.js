@@ -4,6 +4,17 @@ const navSlide = () => {
   const nav = document.querySelector('.nav-link');
   const navLinks = document.querySelectorAll('.nav-link li');
 
+  // add home link to drowdown menu
+  let newNavLink = document.createElement('li');
+  let newInnerText = document.createTextNode('home');
+  newNavLink.appendChild(newInnerText);
+  nav.insertBefore(newNavLink, nav.childNodes[0]);
+
+  //set href of home link to top of page
+  newNavLink.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+  })
+
   burger.addEventListener('click', function () {
     //toggle nav
     nav.classList.toggle('nav-active');
