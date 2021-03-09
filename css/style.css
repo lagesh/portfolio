@@ -311,50 +311,35 @@ nav a:hover {
   position: relative;
 }
 
-/* .overlay {
-  position: absolute;
+.project-image {
+  width: 100%;
+  height: auto;
   display: block;
+}
+
+.project-item a {
+  text-decoration: none;
+}
+
+.overlay {
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  cursor: pointer;
+  background-color: #fff;
+  opacity: 0;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
 }
 
-.overlay:hover {
-  display: none;
-} */
-
-.project-item a {
-  text-decoration: none;
-}
-
-.project-card-bottom {
-  background-color: rgb(2, 116, 116);
-  color: #fff;
-  padding: 1.2rem;
-  font-size: 0.9rem;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.project-card-bottom h3 {
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-.project-card-bottom p {
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-}
-
-.project-image {
-  width: 100%;
-  height: auto;
+.project-item:hover .overlay {
+  opacity: 1;
 }
 
 /* ---------FOOTER ------------ */
