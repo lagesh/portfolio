@@ -352,6 +352,44 @@ nav a:hover {
   font-weight: lighter;
   font-size: 0.9rem;
 }
+
+/* ------------- CONTACTS ------- */
+#contacts {
+  padding: 3rem;
+  color: rgb(2, 5, 29);
+  background-color: rgb(243, 237, 237);
+  /* text-align: center; */
+}
+
+.contacts-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-icon li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.contacts-icon li img {
+  width: 2rem;
+  height: auto;
+}
+
+.icon {
+  margin: 0 10px;
+  padding: 0.3rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.icon:hover {
+  background-color:rgb(47, 158, 209);
+}
 /* ---------FOOTER ------------ */
 footer p {
   padding: 2rem;
