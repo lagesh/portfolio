@@ -1,4 +1,4 @@
-/*
+
 const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-link');
@@ -17,14 +17,13 @@ const navSlide = () => {
       }
     });
     //burger animation
-    burger.classList.toggle('toggle');
+    // burger.classList.toggle('toggle');
   });
 
 
 }
-
 navSlide();
-*/
+
 let topnav = document.getElementById('topnav');
 let sticky = topnav.offsetTop;
 
