@@ -358,7 +358,6 @@ nav a:hover {
   padding: 3rem;
   color: rgb(2, 5, 29);
   background-color: rgb(243, 237, 237);
-  /* text-align: center; */
 }
 
 .contacts-icon {
@@ -390,6 +389,7 @@ nav a:hover {
 .icon:hover {
   background-color:rgb(47, 158, 209);
 }
+
 /* ---------FOOTER ------------ */
 footer p {
   padding: 2rem;
