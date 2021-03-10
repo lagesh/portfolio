@@ -37,7 +37,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgb(20, 18, 18);
+  background-color: rgb(33, 54, 73);
   padding: 1.5rem 0px;
   z-index: 3;
   transition: background-color 800ms ease-in-out;
@@ -542,6 +542,26 @@ footer span {
   transform: translateX(0%);
 }
 
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  -moz-transform: rotate(-45deg) translate(-5px, 6px);
+  -ms-transform: rotate(-45deg) translate(-5px, 6px);
+  -o-transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+  -moz-transform: rotate(45deg) translate(-5px, -6px);
+  -ms-transform: rotate(45deg) translate(-5px, -6px);
+  -o-transform: rotate(45deg) translate(-5px, -6px);
+}
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -550,7 +570,7 @@ footer span {
     -moz-transform: translateX(50px);
     -ms-transform: translateX(50px);
     -o-transform: translateX(50px);
-}
+  }
   to {
     opacity: 1;
     transform: translateX(0px);
@@ -558,5 +578,5 @@ footer span {
     -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
-}
+  }
 }
