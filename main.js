@@ -7,6 +7,7 @@ const navSlide = () => {
   // add home link to drowdown menu
   let newNavLink = document.createElement('li');
   let newInnerText = document.createTextNode('home');
+  newNavLink.style.opacity = '1';
   newNavLink.appendChild(newInnerText);
   nav.insertBefore(newNavLink, nav.childNodes[0]);
 
@@ -22,11 +23,12 @@ const navSlide = () => {
     //animate links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
-        link.style.animation = '';
+       link.style.animation = '';
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1}s`
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`
       }
     });
+  
     //burger animation
     // burger.classList.toggle('toggle');
   });

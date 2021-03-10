@@ -5,10 +5,6 @@
   font-family: 'Lato', sans-serif;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -23,7 +19,7 @@ header {
   height: 100vh;
   background-position: center top;
   width: 100%;
-  /* padding-top: 1%; */
+  overflow-x: hidden;
 }
 
 /*---the nav---*/
@@ -34,6 +30,7 @@ nav {
   justify-content: space-between;
   text-transform: uppercase;
   width: 100%;
+  position: relative;
 }
 
 .sticky {
@@ -387,7 +384,7 @@ nav a:hover {
 }
 
 .icon:hover {
-  background-color:rgb(47, 158, 209);
+  background-color: rgb(47, 158, 209);
 }
 
 /* ---------FOOTER ------------ */
@@ -449,7 +446,12 @@ footer span {
 }
 
 @media only screen and (max-width: 806px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .nav-link {
+    position: absolute;
     right: 0px;
     height: 40vh;
     top: 8vh;
@@ -458,7 +460,6 @@ footer span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     width: 40%;
     z-index: 1;
     transform: translateX(100%);
@@ -474,7 +475,7 @@ footer span {
   }
 
   .nav-link li {
-    opacity: 1;
+    opacity: 0;
   }
 
   .nav-link li:first-child {
@@ -539,4 +540,23 @@ footer span {
 
 .nav-active {
   transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+}
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
 }
