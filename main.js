@@ -37,6 +37,7 @@ const navSlide = () => {
 }
 navSlide();
 
+//fixed sticky nav background on scroll
 let topnav = document.getElementById('topnav');
 let sticky = topnav.offsetTop;
 
