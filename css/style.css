@@ -21,7 +21,16 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center;
-  margin-bottom: 1.75rem;
+  /* margin: 1.75rem; */
+  padding: 2rem;
+}
+
+#skills, #projects {
+  padding: 3rem 3rem 4.5rem 3rem;
+}
+
+.about-me, #skills, #contacts {
+  color: rgb(2, 5, 29);
 }
 
 /*--- THE NAV ---*/
@@ -171,13 +180,12 @@ header {
   width: 60%;
   margin: auto;
   text-align: justify;
-  padding: 4rem 1rem;
-  color: rgb(2, 5, 29);
+  padding: 3rem 1rem 4.5rem 1rem;
 }
 
-.about-me h2 {
-  margin-bottom: 1.75rem;
-}
+/* .about-me h2 {
+  margin: 1.75rem;
+} */
 
 .about-me p {
   font-size: 1rem;
@@ -187,8 +195,6 @@ header {
 
 /* -----------SKILLS SECTION----------*/
 #skills {
-  padding: 3rem;
-  color: rgb(2, 5, 29);
   background-color: rgb(243, 237, 237);
 }
 
@@ -295,7 +301,6 @@ header {
 
 /*------------ PROJECTS SECTION -------- */
 #projects {
-  padding: 3rem;
   height: auto;
 }
 
@@ -366,7 +371,6 @@ header {
 /* ------------- CONTACTS SECTION ------- */
 #contacts {
   padding: 3rem;
-  color: rgb(2, 5, 29);
   background-color: rgb(243, 237, 237);
 }
 
