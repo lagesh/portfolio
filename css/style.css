@@ -10,6 +10,7 @@
 9. Media Queries
 */
 
+/*--------GENERAL STYLING------------*/
 * {
   margin: 0px;
   padding: 0px;
@@ -25,11 +26,14 @@ h2 {
   padding: 2rem;
 }
 
-#skills, #projects {
+#skills,
+#projects {
   padding: 3rem 3rem 4.5rem 3rem;
 }
 
-.about-me, #skills, #contacts {
+.about-me,
+#skills,
+#contacts {
   color: rgb(2, 5, 29);
 }
 
@@ -169,12 +173,6 @@ header {
   animation-timing-function: ease-in;
 }
 
-/* .welcome-msg p {
-  color: #fff;
-  text-align: center;
-  margin-top: 5rem;
-} */
-
 /* ----------ABOUT ME SECTION --------*/
 .about-me {
   width: 60%;
@@ -182,10 +180,6 @@ header {
   text-align: justify;
   padding: 3rem 1rem 4.5rem 1rem;
 }
-
-/* .about-me h2 {
-  margin: 1.75rem;
-} */
 
 .about-me p {
   font-size: 1rem;
@@ -359,13 +353,19 @@ header {
   opacity: 1;
 }
 
+.overlay h3,
+.overlay p {
+  position: relative;
+}
 .overlay h3 {
   font-size: 1rem;
   font-weight: 500;
+  top: 15%;
 }
 .overlay p {
   font-weight: lighter;
   font-size: 0.9rem;
+  top: 30%;
 }
 
 /* ------------- CONTACTS SECTION ------- */
@@ -579,6 +579,14 @@ footer span {
   -o-transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@media only screen and (max-width: 380px) {
+  .overlay h3 {
+    top: 10%;
+  }
+  .overlay p {
+    top: 20%;
+  }
+}
 @keyframes navLinkFade {
   from {
     opacity: 0;
